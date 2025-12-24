@@ -25,7 +25,7 @@ jobs:
       - name: Run training with MLflow Project
         run: |
           cd MLProject
-          mlflow run . --env-manager=virtualenv
+          mlflow run . --env-manager=local
 
       - name: Build Docker image
         run: |
