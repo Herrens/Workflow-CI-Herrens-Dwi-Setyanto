@@ -1,4 +1,6 @@
-name: telco-churn-project
+name: telco-churn-ci
+
+conda_env: conda.yaml
 
 entry_points:
   main:

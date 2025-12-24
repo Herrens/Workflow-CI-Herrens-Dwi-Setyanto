@@ -22,10 +22,10 @@ jobs:
         run: |
           pip install mlflow==2.19.0 scikit-learn pandas
 
-      - name: Run training
+      - name: Run training with MLflow Project
         run: |
           cd MLProject
-          python modelling.py
+          mlflow run .
 
       - name: Build Docker image
         run: |
