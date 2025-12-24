@@ -22,6 +22,7 @@ with mlflow.start_run():
 
     acc = accuracy_score(y_test, model.predict(X_test))
     mlflow.log_metric("accuracy", acc)
+    mlflow.sklearn.save_model(model, "docker_model")
     mlflow.sklearn.log_model(model, "model")
 
     print("CI Accuracy:", acc)
