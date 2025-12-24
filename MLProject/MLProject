@@ -1,5 +1,7 @@
 name: telco-churn-ci
 
+python: "3.12"
+
 conda_env: conda.yaml
 
 entry_points:
